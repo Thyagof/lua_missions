@@ -47,7 +47,7 @@ function test_double_brackets_can_take_several_lines()
 It was the best of times,
 It was the worst of times.
 ]]
-  assert_equal(__, type(long_str))
+  assert_equal(__, type(long_str));
 --[[ bonus note:
 You can use multi-line strings to create multi-line comments,
 such as this one.
