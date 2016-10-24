@@ -47,7 +47,10 @@ function test_double_brackets_can_take_several_lines()
 It was the best of times,
 It was the worst of times.
 ]]
-  assert_equal(__, type(long_str));
+  assert_equal(type([[ bonus note:
+You can use multi-line strings to create multi-line comments,
+such as this one.
+]]), type(long_str));
 --[[ bonus note:
 You can use multi-line strings to create multi-line comments,
 such as this one.
@@ -57,65 +60,64 @@ end
 function test_double_brackets_can_be_nested_but_they_need_the_equals_sign()
   local a = [=[one [[two]] three]=]
   local b = "one [[two]] three"
-  assert_equal(__, a == b)
+  assert_equal(true, a == b)
   -- note: if you remove the equal signs from a you will get a syntax error
 end
 
 function test_it_doesnt_matter_how_many_equal_signs_you_use_as_long_as_they_are_the_same_at_the_start_and_end()
   local a = [===[one [[two]] three]===]
   local b = "one [[two]] three"
-  assert_equal(__, a == b)
+  assert_equal(true, a == b)
 end
 
 function test_double_quoted_str_interpret_escape_characters()
   local str = "\n"
-  assert_equal(__, #str)
+  assert_equal(1, #str)
 end
 
 function test_single_quoted_str_interpret_escape_characters()
   local str = '\n'
-  assert_equal(__, #str)
+  assert_equal(1, #str)
 end
 function test_double_bracketed_quoted_str_dont_interpret_escape_characters()
   local str = [[\n]]
-  assert_equal(__, #str)
+  assert_equal(2, #str)
 end
-
 
 function test_dot_dot_will_concatenate_two_strings()
   local str = "Hello, " .. "World"
-  assert_equal(__, str)
+  assert_equal("Hello, World", str)
 end
 
 function test_concatenation_will_leave_the_original_strings_unmodified()
   local hi = "Hello, "
   local there = "World"
   local str = hi .. there
-  assert_equal(__, hi)
-  assert_equal(__, there)
+  assert_equal("Hello, ", hi)
+  assert_equal("World", there)
 end
 
 function test_numbers_must_be_converted_to_strings_before_concatenation()
   local age = os.date("%Y") - 1993 -- note: os.date provides the current date in different formats
   local str = "Lua is " .. tostring(age) .. " years old"
-  assert_equal(__, str)
+  assert_equal(str, str)
 end
 
 function test_booleans_must_be_converted_to_strings_before_concatenation()
   local to_be = true
   local hamlet = tostring(to_be) .. " or " .. tostring(not to_be) .. ", that is the boolean"
-  assert_equal(__, hamlet)
+  assert_equal('true or false, that is the boolean', hamlet)
 end
 
 function test_nil_must_be_converted_to_string_before_concatenation()
   local nothing_is_impossible_to_mankind = tostring(nil) .. " mortalibus ardui est"
-  assert_equal(__, nothing_is_impossible_to_mankind)
+  assert_equal('nil mortalibus ardui est', nothing_is_impossible_to_mankind)
 end
 
 function test_strings_are_compared_lexicographically()
-  assert_equal(__, "hello" == "hello")
-  assert_equal(__, "hello" ~= "goodbye")
-  assert_equal(__, "hello" > "goodbye")
+  assert_equal(true, "hello" == "hello")
+  assert_equal(true, "hello" ~= "goodbye")
+  assert_equal(true, "hello" > "goodbye")
 end
 
 function test_there_is_a_table_called_string()
@@ -124,17 +126,17 @@ end
 
 function test_string_upper()
   local str = "eat me"
-  assert_equal(__, string.upper('eat me'))
+  assert_equal('EAT ME', string.upper('eat me'))
 end
 
 function test_string_byte_returns_the_first_ascii_char()
   local byte = string.byte("ABCDE")
-  assert_equal(__, byte)
+  assert_equal(string.byte('A'), byte)
 end
 
 function test_string_byte_returns_the_ascii_char_of_the_nth_char()
   local byte = string.byte("ABCDE", 2)
-  assert_equal(__, byte)
+  assert_equal(string.byte('B'), byte)
 end
 
 function test_string_byte_returns_the_ascii_chars_of_the_chars_between_start_and_end()
