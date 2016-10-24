@@ -121,7 +121,7 @@ function test_strings_are_compared_lexicographically()
 end
 
 function test_there_is_a_table_called_string()
-  assert_equal(__, type(string))
+  assert_equal('table', type(string))
 end
 
 function test_string_upper()
@@ -141,34 +141,34 @@ end
 
 function test_string_byte_returns_the_ascii_chars_of_the_chars_between_start_and_end()
   local byte1, byte2, byte3 = string.byte("ABCDE", 2, 4)
-  assert_equal(__, byte2)
+  assert_equal(67, byte2)
 end
 
 function test_string_byte_returns_nil_when_out_of_bounds()
-  assert_equal(__, string.byte("ABCDE", 100))
+  assert_equal(nil, string.byte("ABCDE", 100))
 end
 
 function test_string_char_builds_strings_from_ascii_codes()
-  assert_equal(__, string.char(65,66,67))
+  assert_equal('ABC', string.char(65,66,67))
 end
 
 function test_string_char_returns_empty_string_when_called_with_no_params()
-  assert_equal(__, string.char())
+  assert_equal('', string.char())
 end
 
 function test_string_format_replaces_percent_s_with_string()
   local result = string.format('My name is %s, %s', 'Bond', 'James Bond')
-  assert_equal(__, result)
+  assert_equal('My name is Bond, James Bond', result)
 end
 
 function test_string_format_replaces_percent_q_with_quoted_strings()
   local result = string.format('I told him: %q', 'Go away')
-  assert_equal(__, result)
+  assert_equal('I told him: "Go away"', result)
 end
 
 function test_string_format_replaces_percent_d_with_an_integer()
   local result = string.format('%d, %d, %d and so on...', 1, 2, 3)
-  assert_equal(__, result)
+  assert_equal('1, 2, 3 and so on...', result)
   -- there are other letters for formatting numbers:
   -- %c converts a number to char
   -- %e formats a number as an exponent (3.141593e+000)
@@ -182,41 +182,41 @@ end
 
 function test_string_len() -- another way of getting a string's length
   local str = "Hello"
-  assert_equal(__, string.len(str))
+  assert_equal(5, string.len(str))
 end
 
 function test_you_actually_dont_need_to_use_the_string_table()
   local str = "Hello"
-  assert_equal(__, str:len()) -- notice the colon!
+  assert_equal(5, str:len()) -- notice the colon!
   -- this works with all string functions
 end
 
 function test_shorter_len_requires_extra_parenthesis_around_literals()
-  assert_equal(__, ("Hello"):len())
+  assert_equal(5, ("Hello"):len())
 end
 
 function test_length_operator_does_not_require_extra_parenthesis_around_literals()
-  assert_equal(__, #"Hello")
+  assert_equal(5, #"Hello")
   -- so the length operator is in general more reliable
 end
 
 function test_string_sub_returns_a_substring_given_the_start_and_end_positions()
   local str = 'all your base'
   local start_pos, end_pos = 5, 8
-  assert_equal(__, string.sub(str, start_pos, end_pos))
+  assert_equal('your', string.sub(str, start_pos, end_pos))
 end
 
 function test_string_sub_can_also_be_used_in_a_shorter_way()
   local str = 'all your base'
   local start_pos, end_pos = 5, 8
-  assert_equal(__, str:sub(start_pos, end_pos))
+  assert_equal("your", str:sub(start_pos, end_pos))
   -- this is actually possible with all the functions inside string.
   -- The only problem is that you have to put parenthesis around literals, as shown above
 end
 
 function test_string_sub_with_just_one_position_returns_from_that_position_until_the_end()
   local str = 'all your base'
-  assert_equal(__, string.sub(str, 5))
+  assert_equal('your base', string.sub(str, 5))
 end
 
 
