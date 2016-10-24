@@ -38,7 +38,7 @@ end
 
 function test_double_brackets_can_handle_quotes_and_apostrophes_without_escaping_them()
   local a = [[I can handle both ' and " characters]]
-  assert_equal(__, a)
+  assert_equal([[I can handle both ' and " characters]], a)
   -- So it's just easier to use them if you have to mix both quotes and apostrophes somehow.
 end
 
