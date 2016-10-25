@@ -8,8 +8,10 @@
 ]]
 
 -- INSERT YOUR CODE HERE
-
-
+  getmetatable('').__index = function(str, i) return string.sub(str, i, i) end
+function str:starts_with(x)
+  string.sub(str)
+end
 -- END OF CODE INSERT
 
 function test_starts_with()

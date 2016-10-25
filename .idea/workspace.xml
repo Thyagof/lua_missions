@@ -3,14 +3,31 @@
   <component name="ChangeListManager">
     <list default="true" id="39d6cb4b-1092-4e1f-ba9f-0f0bf6f8bf06" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/missions/control.lua" afterPath="$PROJECT_DIR$/missions/control.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/missions/errors.lua" afterPath="$PROJECT_DIR$/missions/errors.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/missions/functions.lua" afterPath="$PROJECT_DIR$/missions/functions.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/missions/load.lua" afterPath="$PROJECT_DIR$/missions/load.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/missions/patterns.lua" afterPath="$PROJECT_DIR$/missions/patterns.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/missions/strings.lua" afterPath="$PROJECT_DIR$/missions/strings.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/missions/exercise.lua" afterPath="$PROJECT_DIR$/missions/exercise.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/missions/indices.lua" afterPath="$PROJECT_DIR$/missions/indices.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/missions/meta.lua" afterPath="$PROJECT_DIR$/missions/meta.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/missions/tables.lua" afterPath="$PROJECT_DIR$/missions/tables.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/missions/truthiness.lua" afterPath="$PROJECT_DIR$/missions/truthiness.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/missions/tables_and_functions.lua" afterPath="$PROJECT_DIR$/missions/tables_and_functions.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/asserts.lua" afterPath="$PROJECT_DIR$/src/asserts.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/control.lua" afterPath="$PROJECT_DIR$/src/control.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/errors.lua" afterPath="$PROJECT_DIR$/src/errors.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/exercise.lua" afterPath="$PROJECT_DIR$/src/exercise.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/functions.lua" afterPath="$PROJECT_DIR$/src/functions.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/indices.lua" afterPath="$PROJECT_DIR$/src/indices.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/agent.lua" afterPath="$PROJECT_DIR$/src/lib/agent.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/ansicolors.lua" afterPath="$PROJECT_DIR$/src/lib/ansicolors.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/load.lua" afterPath="$PROJECT_DIR$/src/load.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/meta.lua" afterPath="$PROJECT_DIR$/src/meta.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/missions.lua" afterPath="$PROJECT_DIR$/src/missions.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/numbers.lua" afterPath="$PROJECT_DIR$/src/numbers.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/patterns.lua" afterPath="$PROJECT_DIR$/src/patterns.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/strings.lua" afterPath="$PROJECT_DIR$/src/strings.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tables.lua" afterPath="$PROJECT_DIR$/src/tables.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tables_and_functions.lua" afterPath="$PROJECT_DIR$/src/tables_and_functions.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test_file.lua" afterPath="$PROJECT_DIR$/src/test_file.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/truthiness.lua" afterPath="$PROJECT_DIR$/src/truthiness.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/variables.lua" afterPath="$PROJECT_DIR$/src/variables.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/weak_tables.lua" afterPath="$PROJECT_DIR$/src/weak_tables.lua" />
     </list>
     <ignored path="lua_missions.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,21 +48,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="missions.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/missions.lua">
+      <file leaf-file-name="tables.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/missions/tables.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="272">
+              <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tables.lua" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/missions/tables.lua">
+      <file leaf-file-name="tables_and_functions.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/missions/tables_and_functions.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="131" column="19" selection-start-line="131" selection-start-column="19" selection-end-line="131" selection-end-column="19" />
+            <state relative-caret-position="202">
+              <caret line="89" column="19" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="meta.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/missions/meta.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="838">
+              <caret line="135" column="7" selection-start-line="135" selection-start-column="7" selection-end-line="135" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indices.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/missions/indices.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="47" column="14" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exercise.lua" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/missions/exercise.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="19" column="29" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -80,6 +127,10 @@
         <option value="$PROJECT_DIR$/src/missions.lua" />
         <option value="$PROJECT_DIR$/missions/load.lua" />
         <option value="$PROJECT_DIR$/missions/tables.lua" />
+        <option value="$PROJECT_DIR$/missions/tables_and_functions.lua" />
+        <option value="$PROJECT_DIR$/missions/meta.lua" />
+        <option value="$PROJECT_DIR$/missions/indices.lua" />
+        <option value="$PROJECT_DIR$/missions/exercise.lua" />
       </list>
     </option>
   </component>
@@ -144,7 +195,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="missions" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -436,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1477317564249</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Exercícios, control, errors, functions, loas, patterns, strings, tables, truthiness">
+      <created>1477333244470</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1477333244470</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -482,7 +540,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Teste de Push - IDEA" />
-    <option name="LAST_COMMIT_MESSAGE" value="Teste de Push - IDEA" />
+    <MESSAGE value="Exercícios, control, errors, functions, loas, patterns, strings, tables, truthiness" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exercícios, control, errors, functions, loas, patterns, strings, tables, truthiness" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -524,14 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/missions/strings.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="205" column="20" selection-start-line="205" selection-start-column="20" selection-end-line="205" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -600,18 +651,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/missions.lua">
+    <entry file="file://$PROJECT_DIR$/missions/strings.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="101">
+          <caret line="168" column="35" selection-start-line="168" selection-start-column="28" selection-end-line="168" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/missions/tables.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="131" column="19" selection-start-line="131" selection-start-column="19" selection-end-line="131" selection-end-column="19" />
+        <state relative-caret-position="272">
+          <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/missions.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/missions/indices.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="47" column="14" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/missions/meta.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="838">
+          <caret line="135" column="7" selection-start-line="135" selection-start-column="7" selection-end-line="135" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/missions/tables_and_functions.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="89" column="19" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/missions/exercise.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="29" />
           <folding />
         </state>
       </provider>

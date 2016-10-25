@@ -134,12 +134,12 @@ end
 
 function test_non_numberic_keys_are_ignored_by_table_length()
   local t = { 1,2, hi = 'hello' }
-  assert_equal(__, #t)
+  assert_equal(2, #t)
 end
 
 function test_non_numeric_keys_are_ignored_by_table_concat()
   local t = { 1,2, hello = 'hi' }
-  assert_equal(__, table.concat(t, ', '))
+  assert_equal('1, 2', table.concat(t, ', '))
 end
 
 function test_using_tables_as_keys()
@@ -147,17 +147,17 @@ function test_using_tables_as_keys()
   local you = { 4, 5, 6 } 
   local t = { [hi] = 'hello' }
   t[you] = 'world'
-  assert_equal(__, t[hi])
-  assert_equal(__, t[you])
-  assert_equal(__, t[{1, 2, 3}]) -- remember: tables are treated as references
+  assert_equal('hello', t[hi])
+  assert_equal('world', t[you])
+  assert_equal(nil, t[{1, 2, 3}]) -- remember: tables are treated as references
 end
 
 function test_unpacking_a_table()
   local t = { 1, 2, 3 }
-  local a,b,c = unpack(t)
-  assert_equal(__, a)
-  assert_equal(__, b)
-  assert_equal(__, c)
+  local a,b,c = table.unpack(t)
+  assert_equal(1, a)
+  assert_equal(2, b)
+  assert_equal(3, c)
 end
 
 

@@ -2,43 +2,43 @@
 
 function test_double_quoted_strings_are_strings()
   local str = "Hello, World"
-  assert_equal(('string'), type(str))
+  assert_equal(__('string'), type(str))
 end
 
 function test_single_quoted_strings_are_also_strings()
   local str = 'Goodbye, World'
-  assert_equal(('string'), type(str))
+  assert_equal(__('string'), type(str))
 end
 
 function test_double_bracketed_strings_are_also_strings()
   local str = [[Thank you, World]]
-  assert_equal(('string'), type(str))
+  assert_equal(__('string'), type(str))
 end
 
 function test_string_length_operator()
   local str = "Hello"
-  assert_equal((5), #str)
+  assert_equal(__(5), #str)
 end
 
 function test_use_single_quotes_to_create_str_with_double_quotes()
   local str = 'He said, "Go Away."'
-  assert_equal(('He said, "Go Away."'), str) -- just copy the literal over there
+  assert_equal(__('He said, "Go Away."'), str) -- just copy the literal over there
 end
 
 function test_use_double_quotes_to_create_strings_with_single_quotes()
   local str = "Don't"
-  assert_equal(("Don't"), str) -- same, just copy the string
+  assert_equal(__("Don't"), str) -- same, just copy the string
 end
 
 function test_you_can_use_backslash_for_those_hard_cases()
   local a = "He said, \"Don't\""
   local b = 'He said, "Don\'t"'
-  assert_equal((true), a == b)
+  assert_equal(__(true), a == b)
 end
 
 function test_double_brackets_can_handle_quotes_and_apostrophes_without_escaping_them()
   local a = [[I can handle both ' and " characters]]
-
+  assert_equal(__([[I can handle both ' and " characters]]), a)
   -- So it's just easier to use them if you have to mix both quotes and apostrophes somehow.
 end
 
