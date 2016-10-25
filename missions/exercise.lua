@@ -8,9 +8,11 @@
 ]]
 
 -- INSERT YOUR CODE HERE
-  getmetatable('').__index = function(str, i) return string.sub(str, i, i) end
-function str:starts_with(x)
-  string.sub(str)
+function string:starts_with(prefix)
+  return self:sub(1, #prefix) == prefix
+end
+function string:ends_with(suffix)
+  return self:sub(-#suffix, -1) == suffix
 end
 -- END OF CODE INSERT
 
