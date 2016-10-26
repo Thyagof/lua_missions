@@ -96,8 +96,8 @@ function test__eq_operator_is_invoked_when_the_equal_or_not_equal_operators_are_
   }
 
   setmetatable(t1, mt)
-  assert_equal(true, t1 == t2)
-  assert_equal(false, t1 ~= t2)
+  assert_equal(false, t1 == t2)
+  assert_equal(true, t1 ~= t2)
 
   -- only works when both tables have the same metatable
   setmetatable(t2, mt)

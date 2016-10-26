@@ -1,6 +1,6 @@
 function test_creating_empty_tables()
   local empty_table = {}
-  assert_equal( 'table', type(empty_table))
+  assert_equal('table', type(empty_table))
 end
 
 function test_empty_tables_return_nil_when_indexed()
@@ -154,7 +154,7 @@ end
 
 function test_unpacking_a_table()
   local t = { 1, 2, 3 }
-  local a,b,c = table.unpack(t)
+  local a,b,c = unpack(t)
   assert_equal(1, a)
   assert_equal(2, b)
   assert_equal(3, c)

@@ -53,7 +53,7 @@ end
 
 function test_error_returning_non_strings_converts_to_string_but_supresses_file_info()
   local _, message = pcall(error, 404)
-  assert_equal(404, message)
+  assert_equal('404', message)
   -- not only numbers and strings are possible. You can returns tables, functions, etc too.
 end
 
